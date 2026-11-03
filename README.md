@@ -22,12 +22,12 @@
 
 <h1>검증 방법(어떤 명령으로 무엇을 확인했는지)</h1>
 <b>[모든 증명을 스크린샷을 통해 이루어졌으며 해당 리포지토리에 존재함을 알립니다.]<br></b>
-<li>`docker --version`을 통해 도커 버전 확인</li>
-<li>`docker info`를 통해 도커 정보 확인</li>
-<li>`docker images`를 통해 도커에 설치된 이미지 리스트 확인</li>
-<li>`docker ps -a`를 통해 도커에서 실행중 혹은 실행이 종료된 프로세스 리스트 확인</li>
-<li>`vim dockerfile`를 통해 도커파일 작성</li>
-<li>`docker build -t my-custom-image .`를 통해 작성된 도커파일을 커스텀 이미지로 빌드</li>
+-`docker --version`을 통해 도커 버전 확인
+-`docker info`를 통해 도커 정보 확인
+-`docker images`를 통해 도커에 설치된 이미지 리스트 확인
+-`docker ps -a`를 통해 도커에서 실행중 혹은 실행이 종료된 프로세스 리스트 확인
+-`vim dockerfile`를 통해 도커파일 작성
+-`docker build -t my-custom-image .`를 통해 작성된 도커파일을 커스텀 이미지로 빌드
 
 <h1>트러블슈팅 2건 이상(문제 → 원인 가설 → 확인 → 해결/대안)</h1>
 <b>트러블슈팅 X</b>b>
