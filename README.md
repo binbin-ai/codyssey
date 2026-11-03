@@ -3,7 +3,12 @@
 <li> 도커를 활용하여 편리하고 간단하게 서비스를 구축하고 배포할수있다. </li>
 <li> git/github를 활용하여 개발 소프트웨어의 버전 관리 및 협업도구로써 이용할수있다. </li>
 
-실행 환경(OS/쉘/터미널, Docker 버전, Git 버전)
+<h1>실행 환경(OS/쉘/터미널, Docker 버전, Git 버전)</h1>
+<b>Host OS : win11
+<b>VM OS : kali
+<b>Docker ver : 28.5.2+dfsg4
+<b>git ver : 2.56.0.windows.3
+
 수행 항목 체크리스트(터미널/권한/Docker/Dockerfile/포트/볼륨/Git/GitHub)
 검증 방법(어떤 명령으로 무엇을 확인했는지) + 결과 위치 링크
 트러블슈팅 2건 이상(문제 → 원인 가설 → 확인 → 해결/대안)
