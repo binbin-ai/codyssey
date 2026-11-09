@@ -10,15 +10,15 @@
 <b>git ver : 2.56.0.windows.3<br></b>
 
 <h1>수행 항목 체크리스트(터미널/권한/Docker/Dockerfile/포트/볼륨/Git/GitHub)</h1>
-<b>[O] 터미널 조작 로그<br></b>
-<b>[O] 권한 실습<br></b>
-<b>[O] Docker 설치 및 기본 점검<br></b>
-<b>[O] Docker 기본 운영 명령 수행<br></b>
-<b>[O] 컨테이너 실행 실습<br></b>
-<b>[O] 기존 Dockerfile 기반 커스텀 이미지 제작<br></b>
-<b>[O] 포트 매핑<br></b>
-<b>[O] Docker 볼륨<br></b>
-<b>[O] Git 설정 및 GitHub 연동<br></b>
+<b>[O] 터미널 기본 조작 및 폴더 구성<br></b>
+<b>[O] 권한 변경 실습<br></b>
+<b>[O] Docker 설치/점검<br></b>
+<b>[O] hello-world 실행<br></b>
+<b>[O] Dockerfile 빌드/실행<br></b>
+<b>[O] 포트 매핑 접속(2회)<br></b>
+<b>[O] 바인드 마운트 반영<br></b>
+<b>[O] 볼륨 영속성<br></b>
+<b>[O] Git 설정 + VSCode GitHub 연동<br></b>
 
 <h1>검증 방법(어떤 명령으로 무엇을 확인했는지)</h1>
 <b>[모든 증명을 스크린샷을 통해 이루어졌으며 해당 리포지토리에 존재함을 알립니다.]<br></b>
