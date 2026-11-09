@@ -23,8 +23,8 @@
 <h1>검증 방법(어떤 명령으로 무엇을 확인했는지)</h1>
 <b>터미널 기본 조작(파일 및 폴더 관련)<br></b>
 
-- `# pwd`
-- `/root/codyssey/docker/front`
+- INPUT : `# pwd`
+- OUTPUT : `/root/codyssey/docker/front`
 
 
 
