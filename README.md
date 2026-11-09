@@ -20,13 +20,23 @@
 <b>[O] 볼륨 영속성<br></b>
 <b>[O] Git 설정 + VSCode GitHub 연동<br></b>
 
-<h1>검증 방법(어떤 명령으로 무엇을 확인했는지)</h1>
+<h1>검증</h1>
 <b>터미널 기본 조작(파일 및 폴더 관련)<br></b>
 
 - INPUT : `# pwd`
 - OUTPUT : `/root/codyssey/docker/front`
+- INPUT : `# ls`
+- OUTPUT : `dockerfile index.html`
+- INPUT : `# vim test.txt`
+- INPUT : `# ls`
+- OUTPUT : `dockerfile index.html test.txt`
+- INPUT : `# mv test.txt ../`
+- INPUT : `# cd ..`
+- INPUT : `# ls`
+- OUTPUT : `front test.txt`
+- INPUT : `# rm test.txt`
 
-
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/terminal/terminal.png
 
 
 - `docker info`를 통해 도커 정보 확인
