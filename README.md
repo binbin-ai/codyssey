@@ -80,5 +80,19 @@ Path:     /usr/libexec/docker/cli-plugins/docker-buildx
 Docker version 28.5.2+dfsg4, build 9cc6dea35e9a963f281434761c656fba4ac43aed
 ```
 
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/docker%20basic
+
+<b>hello-world 실행(우분투 컨테이너)<br></b>
+
+```bash
+# docker run -it ubuntu bash
+root@dfcf4349696b:/# ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@dfcf4349696b:/# echo Hello World
+Hello World
+```
+
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/docker%20ubuntu/docker%20ubuntu.png
+
 <h1>트러블슈팅 2건 이상(문제 → 원인 가설 → 확인 → 해결/대안)</h1>
 <b>트러블슈팅 X</b>
