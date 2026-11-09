@@ -23,18 +23,20 @@
 <h1>검증</h1>
 <b>터미널 기본 조작(파일 및 폴더 관련)<br></b>
 
-- INPUT : `# pwd`
-- OUTPUT : `/root/codyssey/docker/front`
-- INPUT : `# ls`
-- OUTPUT : `dockerfile index.html`
-- INPUT : `# vim test.txt`
-- INPUT : `# ls`
-- OUTPUT : `dockerfile index.html test.txt`
-- INPUT : `# mv test.txt ../`
-- INPUT : `# cd ..`
-- INPUT : `# ls`
-- OUTPUT : `front test.txt`
-- INPUT : `# rm test.txt`
+```bash
+# pwd
+/root/codyssey/docker/front
+# ls
+dockerfile index.html
+# vim test.txt
+# ls
+dockerfile index.html test.txt
+# mv test.txt ../
+# cd ..
+# ls
+front test.txt
+# rm test.txt
+```
 
 캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/terminal/terminal.png
 
