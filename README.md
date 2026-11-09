@@ -185,6 +185,11 @@ For more examples and ideas, visit:
 
 <b>Dockerfile 작성/빌드/실행<br></b>
 
+<ul>
+  <li><b>이미지 (Image)</b>: 프로그램 실행에 필요한 소스 코드, 라이브러리, 설정 등을 하나로 묶어놓은 <b>읽기 전용(Read-only) 템플릿(설계도)</b>입니다. <code>docker build</code> 명령어로 생성하며, 한 번 만들어지면 내용이 변하지 않습니다.</li>
+  <li><b>컨테이너 (Container)</b>: 이미지를 바탕으로 메모리 위에 격리되어 실제로 구동되는 <b>실행 중인 인스턴스(프로세스)</b>입니다. <code>docker run</code> 명령어로 생성하며, 내부에서 파일을 생성/변경할 수 있지만 컨테이너가 지워지면 변경된 데이터도 함께 날아갑니다(데이터 영속성을 위해 마운트/볼륨이 필요함).</li>
+</ul>
+
 작성
 ```bash
 FROM httpd:latest
