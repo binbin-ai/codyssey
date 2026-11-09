@@ -147,10 +147,58 @@ eb84ee63f6eeb0de39305c5eadb3914f81812b7c8741769ba68d379a15b69d64
 
 접속 결과는 캡쳐 이미지에
 
-캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/dockefile%20and%20custom%20image
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/docker%20port%20mapping
 
+<b>바인드 마운트와 도커 볼륨(데이터 영속성 관련)<br></b>
 
+바인드 마운트
+```bash
+# docker run -d -p 8080:80 -v ~/codyssey/docker/front:/usr/local/apache2/htdocs/ --name vol-apache my-custom-image
+ae29e7b78820321e58e8b4cf0262e9e53e571271a702b41bc3434c727ec6df8c
+# vim index.html
+# cat index.html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>docker-apache web server</title>
+</head>
+<body>
+    <h1>local vol change index.html</h1>
+</body>
+</html>
+```
 
+도커 볼륨
+```bash
+# docker run -d -p 8081:80 -v vol-data:/usr/local/apache2/htdocs/ --name vol2-apache my-custom-image
+e2d0424796f0fe5c06f69bbffc870b6ce2a25548fd946d9e4e6a7d07c58f3df6
+# cd /
+# cd var/lib/docker/volumes/vol-data
+# ls
+_data
+# cd _data
+# ls
+dockerfile  index.html
+# vim index.html
+# cat index.html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>docker-apache web server</title>
+</head>
+<body>
+    <h1>Volume Persistence</h1>
+</body>
+</html>
+```
+
+호스팅 결과는 캡쳐 이미지에
+
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/docker%20port%20mapping
 
 <h1>트러블슈팅 2건 이상(문제 → 원인 가설 → 확인 → 해결/대안)</h1>
 <b>트러블슈팅 X</b>
