@@ -3,6 +3,23 @@
 <li> 도커를 활용하여 편리하고 간단하게 서비스를 구축하고 배포할수있다. </li>
 <li> git/github를 활용하여 개발 소프트웨어의 버전 관리 및 협업도구로써 이용할수있다. </li>
 
+<h1>프로젝트 디렉토리 구조 및 역할</h1>
+
+```text
+codyssey/
+├── authority/                  # 파일 권한 변경(chmod) 실습 캡처 이미지 보관
+├── dockefile and custom image/ # Dockerfile 작성, 이미지 빌드 및 컨테이너 구동 로그 캡처 보관
+├── docker basic/               # Docker 버전 및 시스템 데몬(info) 동작 확인 캡처 보관
+├── docker image and ps/        # 도커 이미지 목록 및 컨테이너 상태(ps) 확인 캡처 보관
+├── docker port mapping/        # 8080, 8081 포트 매핑 및 웹 호스팅 접속 결과 캡처 보관
+├── docker ubuntu/              # 우분투 컨테이너 내부 쉘(bash) 명령 실행 캡처 보관
+├── docker vol/                 # 바인드 마운트 및 볼륨 데이터 영속성(컨테이너 삭제 후 유지) 테스트 결과 캡처 보관
+├── hello world/                # 정식 hello-world 공식 이미지 구동 확인 캡처 보관
+├── terminal/                   # 리눅스 터미널 기본 조작(파일/폴더 생성, 이동, 삭제) 캡처 보관
+├── vscode-git connect/         # Git 사용자 설정 및 VS Code 원격 저장소(GitHub) 연동/푸시 내역 캡처 보관
+└── README.md
+```
+
 <h1>실행 환경(OS/쉘/터미널, Docker 버전, Git 버전)</h1>
 <b>Host OS : win11<br></b>
 <b>VM OS : kali<br></b>
@@ -320,7 +337,7 @@ Date:   Tue Nov 10 02:47:33 2026 +0900
     end
 ```
 
-캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/vscode-git%20connect/gir%20%26%20vscode%20connect.png
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/vscode-git%20connect
 
 <h1>트러블슈팅</h1>
 <b>트러블슈팅 X</b>
