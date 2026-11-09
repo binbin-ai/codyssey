@@ -92,7 +92,54 @@ root@dfcf4349696b:/# echo Hello World
 Hello World
 ```
 
+<b>Dockerfile 작성/빌드/실행<br></b>
+
+작성
+```bash
+FROM httpd:latest
+
+COPY . /usr/local/apache2/htdocs/
+
+EXPOSE 80
+```
+
+빌드 && 실행
+```bash
+# docker build -t my-custom-image .
+[+] Building 0.1s (7/7) FINISHED                                                        docker:default
+ => [internal] load build definition from dockerfile                                              0.0s
+ => => transferring dockerfile: 101B                                                              0.0s
+ => [internal] load metadata for docker.io/library/httpd:latest                                   0.0s
+ => [internal] load .dockerignore                                                                 0.0s
+ => => transferring context: 2B                                                                   0.0s
+ => [internal] load build context                                                                 0.0s
+ => => transferring context: 61B                                                                  0.0s
+ => [1/2] FROM docker.io/library/httpd:latest                                                     0.0s
+ => CACHED [2/2] COPY . /usr/local/apache2/htdocs/                                                0.0s
+ => exporting to image                                                                            0.0s
+ => => exporting layers                                                                           0.0s
+ => => writing image sha256:2bb7e0690e0d2b652bb3037731ba381606a953919d67484e07d7b00e439d9b70       0.0s
+ => => naming to docker.io/library/my-custom-image                                                0.0s
+# docker images
+REPOSITORY        TAG       IMAGE ID       CREATED        SIZE
+my-custom-image   latest    2bb7e0690e0d   10 days ago    117MB
+httpd             latest    8110099cc30b   12 days ago    117MB
+ubuntu            latest    febc1a2eec1f   56 years ago   102MB
+# docker run -d -p 8080:80 --name custom-apache my-custom-image
+c5d2d72f603c8f6c04ff5c4399ef1f9d8190b76e66f5df2a3736950447e48051
+# docker ps -a
+CONTAINER ID   IMAGE             COMMAND              CREATED         STATUS                      PORTS                                   NAMES
+c5d2d72f603c   my-custom-image   "httpd-foreground"   7 seconds ago   Up 6 seconds                0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   custom-apache
+dfcf4349696b   ubuntu            "bash"               5 days ago      Exited (127) 5 days ago                                             objective_feistel
+ad432a5cf3c1   ubuntu            "bash"               5 days ago      Exited (0) 5 days ago                                               happy_golick
+```
+
+
+
 캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/docker%20ubuntu/docker%20ubuntu.png
+
+
+
 
 <h1>트러블슈팅 2건 이상(문제 → 원인 가설 → 확인 → 해결/대안)</h1>
 <b>트러블슈팅 X</b>
