@@ -134,9 +134,20 @@ dfcf4349696b   ubuntu            "bash"               5 days ago      Exited (12
 ad432a5cf3c1   ubuntu            "bash"               5 days ago      Exited (0) 5 days ago                                               happy_golick
 ```
 
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/dockefile%20and%20custom%20image
 
+<b>포트 매핑 접속<br></b>
 
-캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/docker%20ubuntu/docker%20ubuntu.png
+```bash
+# docker run -d -p 8080:80 --name apache-8080 my-custom-image
+eb84ee63f6eeb0de39305c5eadb3914f81812b7c8741769ba68d379a15b69d64
+# docker run -d -p 8081:80 --name apache-8081 my-custom-image
+128de4f947556b6050420b7da1b1512a63157ec8d4bca7213606dbfec8f943bd
+```
+
+접속 결과는 캡쳐 이미지에
+
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/dockefile%20and%20custom%20image
 
 
 
