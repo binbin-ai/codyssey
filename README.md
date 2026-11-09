@@ -20,7 +20,7 @@
 <b>[O] 볼륨 영속성<br></b>
 <b>[O] Git 설정 + VSCode GitHub 연동<br></b>
 
-<h1>검증</h1>
+<h1>검증(수행 로그 발췌 및 캡쳐 이미지 첨부)</h1>
 <b>터미널 기본 조작(파일 및 폴더 관련)<br></b>
 
 ```bash
@@ -42,6 +42,19 @@ front test.txt
 
 <b>권한 변경<br></b>
 
+```bash
+# ls
+test_c.cpp  test_c.out
+# ls -l
+total 20
+-rw-r--r-- 1 root root   102 Nov  6 01:34 test_c.cpp
+-rwxr-xr-x 1 root root 16280 Nov  6 01:34 test_c.out
+# chmod -r test_c.cpp
+# ls -l
+total 20
+--w------- 1 root root   102 Nov  6 01:34 test_c.cpp
+-rwxr-xr-x 1 root root 16280 Nov  6 01:34 test_c.out
+```
 
 
 <h1>트러블슈팅 2건 이상(문제 → 원인 가설 → 확인 → 해결/대안)</h1>
