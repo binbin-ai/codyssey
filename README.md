@@ -164,7 +164,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-캡쳐 이미지 = 
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/hello%20world/hello%20world.png
 
 <b>Dockerfile 작성/빌드/실행<br></b>
 
@@ -268,6 +268,22 @@ dockerfile  index.html
     <h1>Volume Persistence</h1>
 </body>
 </html>
+# docker rm -f vol2-apache
+vol2-apache
+# ls /var/lib/docker/volumes/vol-data/_data
+dockerfile  index.html
+# cat /var/lib/docker/volumes/vol-data/_data/index.html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>docker-apache web server</title>
+</head>
+<body>
+    <h1>Volume Persistence</h1>
+</body>
+</html>
 ```
 
 호스팅 결과는 캡쳐 이미지에
@@ -275,6 +291,34 @@ dockerfile  index.html
 캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/docker%20vol
 
 <b>Git 설정 + VSCode GitHub 연동<br></b>
+
+git 설정 정보
+```bash
+PS C:\Users\BININI\Desktop\코디세이\도커\git 연동> git config user.name
+박현빈
+PS C:\Users\BININI\Desktop\코디세이\도커\git 연동> git config user.email
+245053196+binbin-ai@users.noreply.github.com
+PS C:\Users\BININI\Desktop\코디세이\도커\git 연동>
+```
+
+git 로그
+```bash
+PS C:\Users\BININI\Desktop\코디세이\도커\git 연동\codyssey> git remote -v
+origin  https://github.com/binbin-ai/codyssey.git (fetch)
+origin  https://github.com/binbin-ai/codyssey.git (push)
+PS C:\Users\BININI\Desktop\코디세이\도커\git 연동\codyssey> git log -3
+commit f2a51168e7ad1673d1378f649e1f49d237f160cb (HEAD -> main, origin/main, origin/HEAD)
+Author: 박현빈 <245053196+binbin-ai@users.noreply.github.com>
+Date:   Tue Nov 10 03:24:46 2026 +0900
+
+    수정
+
+commit ce5ebbac57048238e94bdf24c94aada5e389d12a
+Author: 박현빈 <245053196+binbin-ai@users.noreply.github.com>
+Date:   Tue Nov 10 02:47:33 2026 +0900
+
+    end
+```
 
 캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/vscode-git%20connect/gir%20%26%20vscode%20connect.png
 
