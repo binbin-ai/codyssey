@@ -71,7 +71,57 @@ Plugins:
 buildx: Docker Buildx (Docker Inc.)
 Version:  0.29.1+ds1
 Path:     /usr/libexec/docker/cli-plugins/docker-buildx
-...
+
+Server:
+ Containers: 1
+  Running: 1
+  Paused: 0
+  Stopped: 0
+ Images: 1
+ Server Version: 28.5.2+dfsg4
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: systemd
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 
+ runc version: 1.3.6+ds1-1
+ init version: 
+ Security Options:
+  apparmor
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.16.8+kali-amd64
+ Operating System: Kali GNU/Linux Rolling
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 4
+ Total Memory: 7.724GiB
+ Name: kali
+ ID: 6866a4df-63fa-4759-8a4e-87b5cceddd24
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: false
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
 ```
 
 도커 버전 확인
@@ -82,15 +132,39 @@ Docker version 28.5.2+dfsg4, build 9cc6dea35e9a963f281434761c656fba4ac43aed
 
 캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/docker%20basic
 
-<b>hello-world 실행(우분투 컨테이너)<br></b>
+<b>hello-world<br></b>
 
 ```bash
-# docker run -it ubuntu bash
-root@dfcf4349696b:/# ls
-bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
-root@dfcf4349696b:/# echo Hello World
-Hello World
+# docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+4f55086f7dd0: Pull complete 
+Digest: sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
 ```
+
+캡쳐 이미지 = 
 
 <b>Dockerfile 작성/빌드/실행<br></b>
 
