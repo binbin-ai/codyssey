@@ -198,7 +198,11 @@ dockerfile  index.html
 
 호스팅 결과는 캡쳐 이미지에
 
-캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/docker%20port%20mapping
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/tree/main/docker%20vol
 
-<h1>트러블슈팅 2건 이상(문제 → 원인 가설 → 확인 → 해결/대안)</h1>
+<b>Git 설정 + VSCode GitHub 연동<br></b>
+
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/vscode-git%20connect/gir%20%26%20vscode%20connect.png
+
+<h1>트러블슈팅</h1>
 <b>트러블슈팅 X</b>
