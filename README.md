@@ -56,6 +56,29 @@ total 20
 -rwxr-xr-x 1 root root 16280 Nov  6 01:34 test_c.out
 ```
 
+캡쳐 이미지 = https://github.com/binbin-ai/codyssey/blob/main/authority/1.png
+
+<b>Docker 정보 및 버전 확인<br></b>
+
+도커 정보 확인
+```bash
+# docker info
+Client:
+Version:    28.5.2+dfsg4
+Context:    default
+Debug Mode: false
+Plugins:
+buildx: Docker Buildx (Docker Inc.)
+Version:  0.29.1+ds1
+Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+...
+```
+
+도커 버전 확인
+```bash
+# docker --version
+Docker version 28.5.2+dfsg4, build 9cc6dea35e9a963f281434761c656fba4ac43aed
+```
 
 <h1>트러블슈팅 2건 이상(문제 → 원인 가설 → 확인 → 해결/대안)</h1>
 <b>트러블슈팅 X</b>
